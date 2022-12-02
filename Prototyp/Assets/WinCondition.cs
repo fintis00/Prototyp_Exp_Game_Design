@@ -27,10 +27,13 @@ public class WinCondition : MonoBehaviour
     [SerializeField]
     GameObject Timer;
 
+    [SerializeField]
+    GameObject panel;
 
     // Update is called once per frame
     void Update()
     {
+        
         checkFinish();
         if(player1_complete && player2_complete) {
             panel_left.SetActive(false);

@@ -325,9 +325,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2e760527fa5ea44da25900c196f197b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 6
   groundDrag: 5
-  jumpForce: 5
+  jumpForce: 6
   jumpCooldown: 0.5
   airMultiplier: 0.4
   walkSpeed: 0
@@ -1346,9 +1346,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2e760527fa5ea44da25900c196f197b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 6
   groundDrag: 5
-  jumpForce: 5
+  jumpForce: 6
   jumpCooldown: 0.5
   airMultiplier: 0.4
   walkSpeed: 0
@@ -2423,6 +2423,7 @@ MonoBehaviour:
   finish1: {fileID: 911746108}
   finish2: {fileID: 1573311983}
   Timer: {fileID: 6539454054815586234}
+  panel: {fileID: 490385312}
 --- !u!1001 &1392131123
 PrefabInstance:
   m_ObjectHideFlags: 0
