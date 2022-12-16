@@ -13,12 +13,14 @@ public class finish : MonoBehaviour
     [SerializeField]
     GameObject panel;
 
-    public bool finished;
+    [SerializeField]
+    AudioSource audioSource;
 
+    public bool finished;
     
     private void OnTriggerEnter(Collider other)
     {
-        
+        audioSource.Play();
         if (other.gameObject.CompareTag(player_tag))
         {
             Debug.Log(player_tag);
