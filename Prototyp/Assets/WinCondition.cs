@@ -8,6 +8,7 @@ public class WinCondition : MonoBehaviour
 {
     bool player1_complete;
     bool player2_complete;
+    public int levelNumber;
 
     [SerializeField]
     GameObject panel_left;
@@ -29,6 +30,8 @@ public class WinCondition : MonoBehaviour
 
     [SerializeField]
     GameObject panel;
+    [SerializeField]
+    DataScriptableObject data;
 
     // Update is called once per frame
     void Update()
@@ -54,6 +57,21 @@ public class WinCondition : MonoBehaviour
 
     private void showEndscreen()
     {
+        switch (levelNumber)
+        {
+            case 1:
+                data.level2Unlocked = true;
+                break;
+            case 2:
+                data.level3Unlocked = true;
+                break;
+            case 3:
+                data.level4Unlocked = true;
+                break;
+            case 4:
+                data.level5Unlocked = true;
+                break;
+        }
         endscreen.SetActive(true);
     }
 
