@@ -16,3 +16,8 @@ MonoBehaviour:
   level3Unlocked: 0
   level4Unlocked: 0
   level5Unlocked: 0
+  level1BestTime: 0
+  level2BestTime: 0
+  level3BestTime: 0
+  level4BestTime: 0
+  level5BestTime: 0

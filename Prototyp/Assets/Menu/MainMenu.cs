@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 public class MainMenu : MonoBehaviour
 {
     public DataScriptableObject data;
     public AudioClip menuDenied;
     public AudioClip menuAccept;
     public float volume;
+
+    
     public void Level1()
     {
         AudioSource.PlayClipAtPoint(menuAccept, Camera.main.transform.position, volume);

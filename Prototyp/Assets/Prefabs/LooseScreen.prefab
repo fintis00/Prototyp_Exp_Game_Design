@@ -145,9 +145,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'That didn''t work :(
+  m_text: 'Your Time Ran Out!
 
-    Just try again'
+    The Sun Is Rising.
+
+    Try Again'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -349,15 +351,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1575325164242543321, guid: bf1dd86650a4d1b47a3a2d11840fe836, type: 3}
       propertyPath: m_fontColor.b
-      value: 0.6792453
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1575325164242543321, guid: bf1dd86650a4d1b47a3a2d11840fe836, type: 3}
       propertyPath: m_fontColor.g
-      value: 0.6792453
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1575325164242543321, guid: bf1dd86650a4d1b47a3a2d11840fe836, type: 3}
       propertyPath: m_fontColor.r
-      value: 0.6792453
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1575325164242543321, guid: bf1dd86650a4d1b47a3a2d11840fe836, type: 3}
       propertyPath: m_fontSizeBase
@@ -365,7 +367,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1575325164242543321, guid: bf1dd86650a4d1b47a3a2d11840fe836, type: 3}
       propertyPath: m_fontColor32.rgba
-      value: 4289572269
+      value: 4278190080
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf1dd86650a4d1b47a3a2d11840fe836, type: 3}
@@ -503,15 +505,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1575325164242543321, guid: bf1dd86650a4d1b47a3a2d11840fe836, type: 3}
       propertyPath: m_fontColor.b
-      value: 0.6792453
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1575325164242543321, guid: bf1dd86650a4d1b47a3a2d11840fe836, type: 3}
       propertyPath: m_fontColor.g
-      value: 0.6792453
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1575325164242543321, guid: bf1dd86650a4d1b47a3a2d11840fe836, type: 3}
       propertyPath: m_fontColor.r
-      value: 0.6792453
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1575325164242543321, guid: bf1dd86650a4d1b47a3a2d11840fe836, type: 3}
       propertyPath: m_fontSizeBase
@@ -519,7 +521,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1575325164242543321, guid: bf1dd86650a4d1b47a3a2d11840fe836, type: 3}
       propertyPath: m_fontColor32.rgba
-      value: 4289572269
+      value: 4278190080
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf1dd86650a4d1b47a3a2d11840fe836, type: 3}

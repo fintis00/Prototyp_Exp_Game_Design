@@ -10,7 +10,7 @@ public class cameraFollow : MonoBehaviour
     void Update()
     {
         position.x = player.position.x;
-        position.y = player.position.y+3f;
+        position.y = player.position.y+5f;
         position.z = player.position.z-10f;
         transform.position = position;
     }

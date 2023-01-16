@@ -4032,7 +4032,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6539454054922621551, guid: 0763b702ec6f6b7498df48699284c4b6, type: 3}
       propertyPath: timeLeftSeconds
-      value: 60
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 6539454055403256900, guid: 0763b702ec6f6b7498df48699284c4b6, type: 3}
       propertyPath: m_Pivot.x
@@ -4314,6 +4314,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 721513938}
+    - target: {fileID: 7731148189413072352, guid: 20a4aca7a57dd30438e3a72a3e5f93c6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: restartLevel1
+      objectReference: {fileID: 0}
     - target: {fileID: 7731148189744635915, guid: 20a4aca7a57dd30438e3a72a3e5f93c6, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
 using UnityEngine.UIElements;
+using TMPro;
+using System;
 
 public class WinCondition : MonoBehaviour
 {
@@ -42,6 +44,7 @@ public class WinCondition : MonoBehaviour
             panel_left.SetActive(false);
             panel_right.SetActive(false);
             Timer.GetComponent<TimeController>().EndTimer();
+                       
             if (Timer.GetComponent<TimeController>().timeLeftSeconds > 0)
             {
                 showEndscreen();
@@ -61,15 +64,48 @@ public class WinCondition : MonoBehaviour
         {
             case 1:
                 data.level2Unlocked = true;
+                if (data.level1BestTime < Timer.GetComponent<TimeController>().timeLeftSeconds)
+                {                   
+                    data.level1BestTime = Timer.GetComponent<TimeController>().timeLeftSeconds;
+                    TextMeshProUGUI text = endscreen.GetComponentInChildren<TextMeshProUGUI>();
+
+                    text.text += "\nNew Best Time: " + TimeSpan.FromSeconds(data.level1BestTime).ToString("ss'.'ff");
+                }               
                 break;
             case 2:
                 data.level3Unlocked = true;
+                if (data.level2BestTime < Timer.GetComponent<TimeController>().timeLeftSeconds)
+                {                   
+                    data.level2BestTime = Timer.GetComponent<TimeController>().timeLeftSeconds;
+                    TextMeshProUGUI text = endscreen.GetComponentInChildren<TextMeshProUGUI>();
+                    text.text += "\nNew Best Time: " + TimeSpan.FromSeconds(data.level2BestTime).ToString("ss'.'ff");
+                }
                 break;
             case 3:
                 data.level4Unlocked = true;
+                if (data.level3BestTime < Timer.GetComponent<TimeController>().timeLeftSeconds)
+                {                  
+                    data.level3BestTime = Timer.GetComponent<TimeController>().timeLeftSeconds;
+                    TextMeshProUGUI text = endscreen.GetComponentInChildren<TextMeshProUGUI>();
+                    text.text += "\nNew Best Time: " + TimeSpan.FromSeconds(data.level3BestTime).ToString("ss'.'ff");
+                }
                 break;
             case 4:
                 data.level5Unlocked = true;
+                if (data.level4BestTime < Timer.GetComponent<TimeController>().timeLeftSeconds)
+                {                 
+                    data.level4BestTime = Timer.GetComponent<TimeController>().timeLeftSeconds;
+                    TextMeshProUGUI text = endscreen.GetComponentInChildren<TextMeshProUGUI>();
+                    text.text += "\nNew Best Time: " + TimeSpan.FromSeconds(data.level4BestTime).ToString("ss'.'ff");
+                }
+                break;
+            case 5:               
+                if (data.level5BestTime < Timer.GetComponent<TimeController>().timeLeftSeconds)
+                {                 
+                    data.level5BestTime = Timer.GetComponent<TimeController>().timeLeftSeconds;
+                    TextMeshProUGUI text = endscreen.GetComponentInChildren<TextMeshProUGUI>();
+                    text.text += "\nNew Best Time: " + TimeSpan.FromSeconds(data.level5BestTime).ToString("ss'.'ff");
+                }
                 break;
         }
         endscreen.SetActive(true);

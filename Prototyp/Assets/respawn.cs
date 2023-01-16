@@ -16,16 +16,10 @@ public class respawn : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player1"))
-        {
-            
+        if (other.CompareTag("Player1") || other.CompareTag("Player2"))
+        {           
             Player1.position = respawn1.position;
-            
-        }
-        if (other.CompareTag("Player2"))
-        {
-
             Player2.position = respawn2.position;
-        }
+        }       
     }
 }

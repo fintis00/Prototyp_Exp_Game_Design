@@ -23,9 +23,22 @@ public class returnToMenu : MonoBehaviour
     public void restartLevel1()
     {
         SceneManager.LoadScene(1);
-    }public void restartLevel2()
+    }
+    public void restartLevel2()
     {
         SceneManager.LoadScene(2);
+    }
+    public void restartLevel3()
+    {
+        SceneManager.LoadScene(3);
+    }
+    public void restartLevel4()
+    {
+        SceneManager.LoadScene(4);
+    }
+    public void restartLevel5()
+    {
+        SceneManager.LoadScene(5);
     }
     public void resume()
     {
