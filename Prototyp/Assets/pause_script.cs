@@ -7,6 +7,8 @@ public class pause_script : MonoBehaviour
 {
     [SerializeField]
     GameObject pause;
+    [SerializeField]
+    GameObject dialogue;
     // Update is called once per frame
     void Update()
     {
@@ -31,5 +33,11 @@ public class pause_script : MonoBehaviour
     {
         Scene scene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(scene.name);
+    }
+
+    private void Start()
+    {
+        dialogue.SetActive(true);
+        FindObjectOfType<DialogueTrigger>().start_dialogue();
     }
 }
