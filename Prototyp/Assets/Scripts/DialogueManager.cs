@@ -38,8 +38,19 @@ public class DialogueManager : MonoBehaviour
         }
 
         string sentence = sentences.Dequeue();
-        dialogue_text.text = sentence;
-    }   
+        StopAllCoroutines();
+        StartCoroutine(TypeSentence(sentence));
+    }  
+    
+    IEnumerator TypeSentence(string sentence)
+    {
+        dialogue_text.text = "";
+        foreach(char letter in sentence.ToCharArray())
+        {
+            dialogue_text.text += letter;
+            yield return null;
+        }
+    }
 
     public void EndDialogue()
     {
