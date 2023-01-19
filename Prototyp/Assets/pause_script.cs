@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class pause_script : MonoBehaviour
 {
+    public GameObject trigger;
     [SerializeField]
     GameObject pause;
     [SerializeField]
@@ -38,6 +39,6 @@ public class pause_script : MonoBehaviour
     private void Start()
     {
         dialogue.SetActive(true);
-        FindObjectOfType<DialogueTrigger>().start_dialogue();
+        trigger.GetComponent<DialogueTrigger>().start_dialogue();
     }
 }

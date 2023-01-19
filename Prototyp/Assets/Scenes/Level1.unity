@@ -2123,6 +2123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b30308a4d0e530498a038aaf73d84a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  trigger: {fileID: 779622995}
   pause: {fileID: 490385312}
   dialogue: {fileID: 916332580}
 --- !u!114 &779623001
@@ -2139,7 +2140,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     list_of_sentences:
-    - Welcome to Gepettos Helfer
+    - Welcome to Gepettos Helper
     - You will be working together to complete the challenges before the Timer runs
       out.
     - You complete the Level when both payers reach the end of the track
@@ -4417,8 +4418,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 45
+  m_fontSizeBase: 45
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
