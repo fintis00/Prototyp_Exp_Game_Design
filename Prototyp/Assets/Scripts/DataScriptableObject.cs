@@ -5,6 +5,8 @@ using UnityEngine;
 [CreateAssetMenu]
 public class DataScriptableObject : ScriptableObject
 {
+    public bool menu_first_visit = true;
+
     public bool level2Unlocked;
     public bool level3Unlocked;
     public bool level4Unlocked;

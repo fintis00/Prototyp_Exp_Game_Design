@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 832b3c793bc58ce4eb229cf0a754ad57, type: 3}
   m_Name: Data Scriptable Object
   m_EditorClassIdentifier: 
+  menu_first_visit: 1
   level2Unlocked: 0
   level3Unlocked: 0
   level4Unlocked: 0
