@@ -1579,7 +1579,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b30308a4d0e530498a038aaf73d84a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  trigger: {fileID: 779622995}
   pause: {fileID: 2008753944}
+  dialogue: {fileID: 0}
 --- !u!1001 &800938367
 PrefabInstance:
   m_ObjectHideFlags: 0

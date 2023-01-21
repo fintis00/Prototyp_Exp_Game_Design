@@ -13,7 +13,7 @@ public class pause_script : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.P))
+        if (Input.GetKey(KeyCode.Escape))
         {
             Debug.Log("Pause");
             pause_menu();
@@ -33,7 +33,9 @@ public class pause_script : MonoBehaviour
     public void restartLevel()
     {
         Scene scene = SceneManager.GetActiveScene();
+        end_pause();
         SceneManager.LoadScene(scene.name);
+        
     }
 
     private void Start()
